@@ -1,0 +1,23 @@
+Recurssion: When a function calls itself - until a specific condition is met.
+
+if the recurssion function has no condition then main stack will be overflowed and it is called as stack Over flow
+
+to avoid the situations like stack overflow we need to keep base condition
+
+base condition is not limited to one it may have any number of conditions
+
+Example:
+
+let count = 0;
+function recursion() {
+  if (count === 4) return;
+
+  console.log(count);
+  count++;
+  recursion();
+}
+
+recursion();
+
+Recurssion Tree:
+-----------------
