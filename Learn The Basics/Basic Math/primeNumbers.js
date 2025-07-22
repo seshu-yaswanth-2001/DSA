@@ -34,16 +34,16 @@ console.log(res);
 
 function primeNumbers(num) {
   let count = 0;
-  for(let i = 0; i <= Math.sqrt(num); i++) {
-    if(num % i === 0) {
+  for (let i = 0; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
       count = count + 1;
-      
-      if(num / i !== i) {
-        count = count + 1
+
+      if (num / i !== i) {
+        count = count + 1;
       }
     }
   }
-  return count === 2 ? "Prime Number" : "Not Prime Number"
+  return count === 2 ? "Prime Number" : "Not Prime Number";
 }
-const result = primeNumbers(36);
-console.log(result)
+const res2 = primeNumbers(36);
+console.log(res2);
