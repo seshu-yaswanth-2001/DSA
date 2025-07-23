@@ -1,3 +1,5 @@
+// Print 1 to N times
+
 function printLinear(count, n) {
   if (count > n) return;
   console.log(count);
