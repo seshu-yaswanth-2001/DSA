@@ -5,4 +5,14 @@ function printLinear(count, n) {
   console.log(count);
   printLinear(count + 1, n);
 }
-printLinear(1, 3);
+printLinear(1, 4);
+
+// console.log("hello");
+// other way
+function nu(n) {
+  if (n < 1) return;
+  nu(n - 1);
+  console.log(n);
+}
+
+nu(10);
