@@ -1,3 +1,23 @@
+// normal way
+
+function normal(arr, queries) {
+  const hash = new Array(45).fill(0);
+
+  for (let i = 0; i < arr.length; i++) {
+    hash[arr[i]] += 1;
+  }
+
+  for (let i = 0; i < queries.length; i++) {
+    console.log(`Frequencies of ${queries[i]}: ${hash[queries[i]]}`);
+  }
+}
+
+normal([1, 2, 3, 4, 5, 6, 1, 2, 3, 44, 2], [1, 44, 0]);
+
+// using max
+
+console.log("Using Max");
+
 function one(arr, queries) {
   const max = Math.max(...arr);
   const hash = new Array(max + 1).fill(0);
