@@ -1,4 +1,4 @@
-// print N to one times
+// print N to 1 times
 
 function linear(i) {
   if (i < 1) return;

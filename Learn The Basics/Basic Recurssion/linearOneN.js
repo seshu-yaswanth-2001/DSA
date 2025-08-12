@@ -1,4 +1,4 @@
-// Print 1 to N times
+// Print 1 to N linearly
 
 function printLinear(count, n) {
   if (count > n) return;
@@ -7,7 +7,7 @@ function printLinear(count, n) {
 }
 printLinear(1, 4);
 
-// console.log("hello");
+console.log("hello");
 // other way
 function nu(n) {
   if (n < 1) return;
@@ -16,3 +16,11 @@ function nu(n) {
 }
 
 nu(10);
+
+function yes(m) {
+  let count = 1;
+
+  if (count < m) return;
+  console.log(m);
+  yes()
+}
