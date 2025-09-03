@@ -1,4 +1,6 @@
 // const arr = [7, 1, 5, 3, 9, 0, 20, -18];
+
+// sorted array or not
 const arr = [1, 2, 3, 4, 5, 6, 7];
 
 function sortedArr(arr) {

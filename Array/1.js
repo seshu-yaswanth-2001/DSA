@@ -1,3 +1,4 @@
+// First Largest
 const arr = [7, 1, 5, 3, 9, 0, 20, -18];
 
 const largest = arr.length ? Math.max(...arr) : null;
