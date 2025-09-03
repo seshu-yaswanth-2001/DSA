@@ -1,5 +1,4 @@
-// Merge Sort - Divide & Merge the complete array till the 
-
+// Merge Sort - Divide & Merge the complete array till sorted.
 
 function merge(arr, low, mid, high) {
   let temp = [];
