@@ -30,7 +30,7 @@ console.log(moveZeros(arr));
 function moveZero(arr) {
   let n = arr.length;
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < n; i++) {
     if (a[i] === 0) {
       j = i;
       break;
