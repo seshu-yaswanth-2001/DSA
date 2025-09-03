@@ -27,20 +27,19 @@ const arr = [1, 0, 2, 3, 4, 0, 5, 6, 7, 8, 0, 10, 11, 0, 23];
 console.log(moveZeros(arr));
 
 // optimal solution
-function moveZero(arr) {
-  let n = arr.length;
-
-  for (let i = 0; i < n; i++) {
-    if (a[i] === 0) {
-      j = i;
-      break;
+function moveZerosToEnd(arr) {
+  let count = 0; // Pos for next non-zero
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+      arr[count++] = arr[i];
     }
   }
-
-  if (j === -1) return a;
-  for(let i = j + 1; i < n; i++) {
-    if(a[i] !== 0) {
-        
-    }
+  while (count < arr.length) {
+    arr[count++] = 0;
   }
+  return arr;
 }
+
+
+const arr = [1, 0, 2, 3, 4, 0, 5, 6, 7, 8, 0, 10, 11, 0, 23];
+console.log(moveZerosToEnd(arr));
