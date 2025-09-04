@@ -23,8 +23,8 @@ function moveZeros(arr) {
   return arr;
 }
 
-const arr = [1, 0, 2, 3, 4, 0, 5, 6, 7, 8, 0, 10, 11, 0, 23];
-console.log(moveZeros(arr));
+const arr2 = [1, 0, 2, 3, 4, 0, 5, 6, 7, 8, 0, 10, 11, 0, 23];
+console.log(moveZeros(arr2));
 
 // optimal solution
 function moveZerosToEnd(arr) {
@@ -39,7 +39,6 @@ function moveZerosToEnd(arr) {
   }
   return arr;
 }
-
 
 const arr = [1, 0, 2, 3, 4, 0, 5, 6, 7, 8, 0, 10, 11, 0, 23];
 console.log(moveZerosToEnd(arr));
