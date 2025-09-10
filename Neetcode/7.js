@@ -50,4 +50,4 @@ function prod(nums) {
 const arr = [1, 2, 4, 6];
 const arr2 = [-1, 0, 1, 2, 3];
 console.log(prodArr(arr2));
-console.log(prod(arr2));
+console.log(prod(arr));
