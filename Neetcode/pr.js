@@ -1,22 +1,18 @@
-function prod(nums) {
-  const n = nums.length;
-  const prefix = new Array(n).fill(1);
-  const suffix = new Array(n).fill(1);
-  const res = new Array(n).fill(1);
+function longest(nums) {
+  let res = 0;
+  const set = new Set(nums);
 
-  for (let i = 1; i < n; i++) {
-    prefix[i] = prefix[i - 1] * nums[i - 1];
-  }
+  for (let num of set) {
+    let length = 0;
+    let curr = num;
+    while (set.has(curr)) {
+      length++;
+      curr++;
+    }
 
-  for (let i = n - 2; i >= 0; i--) {
-    suffix[i] = suffix[i + 1] * nums[i + 1];
-  }
-
-  for (let i = 0; i < n; i++) {
-    res[i] = prefix[i] * suffix[i];
+    res = Math.max(length, res);
   }
   return res;
 }
 
-const arr = [1, 2, 4, 6];
-console.log(prod(arr));
+console.log(longest([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]));
